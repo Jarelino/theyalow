@@ -1,0 +1,326 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    color: #fff
+}
+
+
+@font-face
+{
+    src: url(fonts/Lucida\ Sans\ Std\ Italic.otf);
+    font-family: LucidaItalic;
+}
+
+@font-face
+{
+    src: url(fonts/Segoe\ WP\ Regular.ttf);
+    font-family: SegoeWP;
+}
+
+@font-face
+{
+    src: url(fonts/Asap-Regular.otf);
+    font-family: AsapRegular;
+}
+
+body
+{
+    background: url(images/header-bg.png) no-repeat;
+    background-size: 100%;
+
+}
+
+#head
+{
+    margin-left: 140px;
+    margin-right: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#title
+{
+    display: flex;
+}
+
+#logoShadow
+{
+    margin-top: 29px;
+    width: 83px;
+    height: 83px;
+    position: absolute;
+    -moz-transform: rotate(44deg);
+    -ms-transform: rotate(44deg);
+    -webkit-transform: rotate(44deg);
+    -o-transform: rotate(44deg); 
+    transform: rotate(44deg);
+    opacity: 0.5;
+}
+
+#title img
+{
+    margin-top: 29px;
+    width: 83px;
+    height: 83px;
+}
+
+#title h1
+{
+    letter-spacing: 1.9px;
+    margin-top: 52px;
+    margin-left: 6px;
+    font-size: 39px;
+    color: #fff;
+    font-family: LucidaItalic;
+}
+
+#navBar
+{
+    margin-top: 72px;
+}
+
+#navBar ul
+{
+    list-style-type: none;
+    display: flex;
+    box-shadow: -4px -5px rgba(245, 197, 6, 0.271),
+                -8px -8px rgba(245, 197, 6, 0.271); 
+}
+  
+  
+
+#navBar ul li
+{
+    border-left: 1px solid #dcb105;
+    height: 41px;
+}
+
+#navBar ul li:nth-child(2)
+{
+    width: 132px;
+}
+
+#navBar ul li:nth-child(3)
+{
+    width: 147px;
+}
+
+#navBar ul li:first-child
+{
+    width: 172px;
+    border-left: none;
+}
+
+#navBar ul li img
+{
+    margin-top: 11px;
+}
+
+#navBar ul li:nth-child(2) img
+{
+    margin-left: 14px;
+}
+
+#navBar ul li:nth-child(3) img
+{
+    margin-left: 17px;
+}
+
+#navBar ul li:first-child img
+{
+    margin-left: 39px;
+}
+
+
+#navBar ul li a
+{
+    letter-spacing: 0.2px;
+    font-size: 17px;
+    color: #9b7d08;
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 10px;
+    font-family: SegoeWP;
+}
+
+#navBar ul li:hover
+{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#navBar ul li a:nth-child(2)
+{
+    margin-left: 9px;
+}
+
+#navBar ul li,
+#navBar ul li img,
+#navBar ul li a
+{
+    background: #f5c506;
+}
+
+main
+{
+    margin-left: 140px;
+}
+
+#headerContent
+{
+    margin-top: 56px;
+    margin-left: 10px;
+    display: flex;
+}
+
+#headerContent video
+{
+    width: 549;
+    height: 327;
+}
+
+.headerText
+{
+    margin-top: 72px;
+    margin-left: 35px;
+    font-size: 63px;
+    text-align: center;
+    font-family: AsapRegular;
+    letter-spacing: 1px;
+}
+
+.headerText p:first-child
+{
+    color: #f5c506;
+}
+
+.headerText p:last-child
+{
+
+    margin-top: -4px;
+    margin-left: 14px;
+}  
+
+.rightArrow,
+.leftArrow
+{
+    position: absolute;
+    height: 57px;
+    width: 32px;
+    background: #f5c506;
+    top: 32.1%;
+}
+
+.leftArrow
+{
+    left: 0%;
+}
+
+.rightArrow
+{
+    right: 0%;
+}
+
+.rightArrow img
+{
+    margin-top: 18px;
+    margin-left: 11px;
+}
+
+.leftArrow img
+{
+    margin-top: 19px;
+    margin-left: 8px;
+}
+
+.rightArrow:hover,
+.leftArrow:hover
+{
+    opacity: 0.9;
+}
+
+.mainArrow
+{
+    position: absolute;
+    margin-left: 241px;
+    margin-top: 130px;
+    height: 66px;
+    width: 66px;
+    background: #f5c506;
+    border-radius: 31px;
+    opacity: 0.8;
+}
+
+.mainArrow img
+{
+    margin-top: 17px;
+    margin-left: 26px;
+}
+
+.playLine
+{
+    position: absolute;
+    display: flex;
+    top: 48.6%;
+}
+
+#allProgress
+{
+    width: 405px;
+    opacity: 0.4;
+    border-radius: 4px;
+}
+
+#currentProgress
+{
+    width: 180px;
+}
+
+#currentProgress,
+#allProgress
+{
+    height: 12px;
+    background: #f5c506;
+}
+
+#currentProgress
+{
+    border-radius: 4px 0 0 4px;
+}
+
+#progressBar div
+{
+    position: absolute;
+    margin-left: 24px;
+}
+
+#play
+{
+    height: 27px;
+    width: 27px;
+    background: rgba(245, 197, 6, 0.4); ;
+    margin-left: 29px;
+    margin-top: -8px;
+}
+
+#play img
+{
+    height: 17px;
+    width: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+    opacity: 0.5;
+}
+
+#volume
+{
+    margin-left: 459px;
+    margin-top: -1px;
+}
+
+
+#block
+{
+    height: 1000px;
+}
