@@ -8,27 +8,33 @@
 
 @font-face
 {
-    src: url(fonts/Lucida\ Sans\ Std\ Italic.otf);
-    font-family: LucidaItalic;
+    src: url(fonts/OpenSans-LightItalic.ttf);
+    font-family: "LucidaItalic";
 }
 
 @font-face
 {
-    src: url(fonts/Segoe\ WP\ Regular.ttf);
-    font-family: SegoeWP;
+    src: url(fonts/segoe-wp-light.ttf);
+    font-family: "SegoeWP";
 }
 
 @font-face
 {
     src: url(fonts/Asap-Regular.otf);
-    font-family: AsapRegular;
+    font-family: "AsapRegular";
+}
+
+@font-face
+{
+    src: url(fonts/SegoeWP.ttf);
+    font-family: "Segoe UI";
 }
 
 body
 {
     background: url(images/header-bg.png) no-repeat;
     background-size: 100%;
-
+    width: 1300px;
 }
 
 .head
@@ -46,7 +52,7 @@ body
 
 .logoShadow
 {
-    margin-top: 29px;
+    margin-top: 28px;
     width: 83px;
     height: 83px;
     position: absolute;
@@ -60,16 +66,16 @@ body
 
 .title img
 {
-    margin-top: 29px;
+    margin-top: 28px;
     width: 83px;
     height: 83px;
 }
 
 .title h1
 {
-    letter-spacing: 1.9px;
-    margin-top: 52px;
-    margin-left: 6px;
+    letter-spacing: 5.4px;
+    margin-top: 47px;
+    margin-left: 9px;
     font-size: 39px;
     color: #fff;
     font-family: LucidaItalic;
@@ -77,7 +83,7 @@ body
 
 .navBar
 {
-    margin-top: 72px;
+    margin-top: 71px;
 }
 
 .navBar ul
@@ -135,13 +141,14 @@ body
 
 .navBar ul li a
 {
-    letter-spacing: 0.2px;
+    letter-spacing: 0.6px;
     font-size: 17px;
     color: #9b7d08;
     position: absolute;
     margin-top: 9px;
     margin-left: 10px;
     font-family: SegoeWP;
+    font-weight: bold;
 }
 
 .navBar ul li:hover
@@ -162,7 +169,7 @@ body
     background: #f5c506;
 }
 
-main
+.header
 {
     margin-left: 140px;
 }
@@ -182,24 +189,24 @@ main
 
 .headerText
 {
-    margin-top: 72px;
-    margin-left: 35px;
+    margin-top: 71px;
     font-size: 63px;
     text-align: center;
     font-family: AsapRegular;
-    letter-spacing: 1px;
 }
 
 .headerText p:first-child
 {
+    margin-left: 34px;
+    letter-spacing: 0.5px;
     color: #f5c506;
 }
 
 .headerText p:last-child
 {
-
+    letter-spacing: 0.7px;
     margin-top: -4px;
-    margin-left: 14px;
+    margin-left: 49px;
 }  
 
 .rightArrow,
@@ -207,18 +214,20 @@ main
 {
     position: absolute;
     height: 57px;
-    width: 32px;
+
     background: #f5c506;
-    top: 32.1%;
+    margin-top: -195px;
 }
 
 .leftArrow
 {
+    width: 32px;
     left: 0%;
 }
 
 .rightArrow
 {
+    width: 31px;
     right: 0%;
 }
 
@@ -262,7 +271,7 @@ main
 {
     position: absolute;
     display: flex;
-    top: 48.6%;
+    margin-top: 286px;
 }
 
 .allProgress
@@ -319,8 +328,90 @@ main
     margin-top: -1px;
 }
 
-
-.block
+.features
 {
-    height: 1000px;
+    display: flex;
+    background: url(images/feat-bg.png);
+    height: 212px;
+    margin-top: 70px;
+    box-shadow: 0 0 5px rgba(0,0,0,1);
+}
+
+.featItem
+{
+    width: 338px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px rgba(0,0,0,0.1411764705882353) solid;
+}
+
+
+.featImg
+{
+    display: flex;
+    justify-content: center;
+}
+
+.featItem:first-child .featImg
+{
+    margin-top: 62px;
+    margin-left: -6px;
+}
+
+.featItem:nth-child(2) .featImg
+{
+    margin-top: 38px;
+    margin-left: 22px;
+}
+
+.featItem:last-child .featImg
+{
+    margin-top: 55px;
+    margin-left: -20px;
+}
+
+
+.featItem:first-child
+{
+    margin-left: 140px;
+    width: 339px;
+}
+
+.featItem:last-child
+{
+    border-right: 1px rgba(0,0,0,0.1411764705882353) solid;
+}
+
+.featItem span
+{
+    font-size: 27px;
+    font-family: SegoeWP;
+    color: #000;
+    height: 300px;
+    letter-spacing: 0.3px;
+}
+
+.featItem:first-child span
+{
+    margin-top: 9px;
+    margin-left: 17px;
+}
+
+.featItem:nth-child(2) span
+{
+    margin-top: 13px;
+    margin-left: 21px;
+}
+
+.featItem:last-child span
+{
+    margin-top: 8px;
+    margin-left: -14px;
+}
+
+.featItem:hover .featImg img,
+.featItem:hover span
+{
+    filter: drop-shadow(3px 0px 5px #000); 
 }
